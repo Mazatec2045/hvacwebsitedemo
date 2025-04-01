@@ -34,7 +34,7 @@ const LocallyTrustedTeam = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <img
-                            src="https://placehold.co/800x600/red/white?text=HVAC+Service+Team"
+                            src={process.env.PUBLIC_URL + '/Hvac Service Team.jpg'}
                             alt="Our HVAC Service Team"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
