@@ -42,7 +42,7 @@ const LocallyTrustedTeam = () => {
 
                     {/* Team Info */}
                     <motion.div
-                        className="bg-red-600 text-white p-8 md:p-12 flex flex-col justify-center"
+                        className="bg-orange-600 text-white p-8 md:p-12 flex flex-col justify-center"
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -61,7 +61,7 @@ const LocallyTrustedTeam = () => {
                             >
                                 <Link
                                     to="/about"
-                                    className="inline-block bg-white text-red-600 hover:bg-gray-100 py-3 px-8 rounded-full font-medium shadow-lg transition-all"
+                                    className="inline-block bg-white text-orange-600 hover:bg-gray-100 py-3 px-8 rounded-full font-medium shadow-lg transition-all"
                                 >
                                     More About Us
                                 </Link>
@@ -91,7 +91,7 @@ const LocallyTrustedTeam = () => {
                                     <div key={index} className="inline-block">
                                         <Link
                                             to={location.link}
-                                            className="text-red-600 hover:text-red-800 transition-colors text-sm md:text-base font-medium"
+                                            className="text-orange-600 hover:text-orange-800 transition-colors text-sm md:text-base font-medium"
                                         >
                                             {location.name}
                                         </Link>

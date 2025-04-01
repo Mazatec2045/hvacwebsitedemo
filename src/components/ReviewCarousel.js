@@ -145,7 +145,7 @@ const ReviewCarousel = () => {
                         href="https://www.google.com/search?sca_esv=f65d9110a0398786&sxsrf=AHTn8zqHbR1R6tnwXHhdiFz5OFpkr1sPkA:1743416597755&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzXvC1PhJc7GsJkc3py4EdJgmco632dDZ8nbf1j6aWqQHLYX__q4gyRq4El8IaUnSVCYKdfC451DwgZgzbn8H1piWGOBP-ZcLYogKO8dNdKnh5TlcOA%3D%3D&q=Mechanical+of+DFW,+LLC+Reviews&sa=X&ved=2ahUKEwjUyoT4jLSMAxXOD0QIHQjRHhsQ0bkNegQIPBAE&biw=1920&bih=911&dpr=1#lrd=0x864e7bbb08ecd825:0xa054fc9c0964fc2e,1,,,,"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-full inline-block mt-4 transition-colors"
+                        className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded-full inline-block mt-4 transition-colors"
                     >
                         Write a Review
                     </a>
@@ -244,7 +244,7 @@ const ReviewCarousel = () => {
                         {reviews.map((_, index) => (
                             <button
                                 key={index}
-                                className={`w-2.5 h-2.5 mx-1 rounded-full transition-colors ${index === currentIndex ? 'bg-red-600' : 'bg-gray-300'}`}
+                                className={`w-2.5 h-2.5 mx-1 rounded-full transition-colors ${index === currentIndex ? 'bg-orange-600' : 'bg-gray-300'}`}
                                 onClick={() => goToSlide(index)}
                                 aria-label={`Go to review ${index + 1}`}
                             />

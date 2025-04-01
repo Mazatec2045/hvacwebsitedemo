@@ -5,7 +5,14 @@ function ScrollToTopOnNavigate() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+
+        // Additional console log for debugging
+        console.log('Scrolling to top due to navigation to', pathname);
     }, [pathname]);
 
     return null;

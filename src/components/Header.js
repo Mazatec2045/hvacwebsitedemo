@@ -23,6 +23,14 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -56,30 +64,29 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between items-center">
             {/* Logo */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
+            <div
               className="flex items-center mr-4"
             >
-              <Link to="/">
+              <Link to="/" onClick={isHomePage ? scrollToTop : undefined}>
                 <img
-                  src="/images/logo.png"
+                  src={process.env.PUBLIC_URL + "/images/logo.png"}
                   alt="Mechanical of DFW Logo"
                   className="h-10 w-10 md:h-12 md:w-12 mr-2 md:mr-3 rounded-full border border-gray-200"
                   style={{ objectFit: 'contain', backgroundColor: 'white' }}
+                  loading="eager"
                   onError={(e) => {
+                    console.log("Logo load error, using fallback");
                     e.target.onerror = null;
-                    e.target.src = "/HvacTech.jpg"; // Fallback image
+                    e.target.src = process.env.PUBLIC_URL + "/HvacTech.jpg";
                   }}
                 />
               </Link>
-              <Link to="/" className="no-underline">
+              <Link to="/" onClick={isHomePage ? scrollToTop : undefined} className="no-underline">
                 <span className={`text-xl md:text-2xl font-bold ${isScrolled || !isHomePage ? 'text-blue-600' : 'text-white'}`}>
                   Mechanical<span className="text-orange-500"> of DFW</span>
                 </span>
               </Link>
-            </motion.div>
+            </div>
 
             {/* Navigation - Desktop */}
             <nav className="hidden lg:flex items-center space-x-5 xl:space-x-8 flex-grow justify-center max-w-xl">
@@ -92,6 +99,12 @@ const Header = () => {
                   <Link
                     to={item.path}
                     onClick={(e) => {
+                      // Add scroll to top for Home link on homepage
+                      if (item.name === 'Home' && isHomePage) {
+                        e.preventDefault();
+                        scrollToTop();
+                      }
+
                       // Add debugging for Financing link
                       if (item.name === 'Financing') {
                         console.log('Financing link clicked, navigating to', item.path);
@@ -165,6 +178,13 @@ const Header = () => {
                     to={item.path}
                     onClick={(e) => {
                       setMobileMenuOpen(false);
+
+                      // Add scroll to top for Home link on homepage
+                      if (item.name === 'Home' && isHomePage) {
+                        e.preventDefault();
+                        scrollToTop();
+                      }
+
                       // Add debugging for Financing link
                       if (item.name === 'Financing') {
                         console.log('Mobile: Financing link clicked, navigating to', item.path);

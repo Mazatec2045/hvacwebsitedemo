@@ -35,7 +35,7 @@ const Financing = () => {
                     {/* Wells Fargo Financing Card - Styled to match the image */}
                     <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <div className="p-8">
-                            <h3 className="text-3xl font-bold text-red-600 mb-6">Buy today, pay over time</h3>
+                            <h3 className="text-3xl font-bold text-orange-600 mb-6">Buy today, pay over time</h3>
 
                             <h4 className="text-lg font-semibold text-gray-800 mb-4">This credit card also brings you:</h4>
 
@@ -67,7 +67,7 @@ const Financing = () => {
                                     href="https://retailservices.wellsfargo.com/ahapp/init-app?m=0024332413&l=en_US"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-red-600 hover:bg-red-700 text-white py-3 px-10 rounded-lg font-medium text-lg shadow-md transition-all"
+                                    className="bg-orange-600 hover:bg-orange-700 text-white py-3 px-10 rounded-lg font-medium text-lg shadow-md transition-all"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >

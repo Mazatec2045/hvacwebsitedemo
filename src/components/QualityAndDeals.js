@@ -60,13 +60,13 @@ const QualityAndDeals = () => {
                         <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* $25 Off Coupon */}
                             <motion.div
-                                className="border-2 border-dashed border-red-600 rounded-lg p-6 bg-white"
+                                className="border-2 border-dashed border-orange-600 rounded-lg p-6 bg-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <h3 className="text-3xl font-bold text-red-600 mb-2">$25 Off</h3>
+                                <h3 className="text-3xl font-bold text-orange-600 mb-2">$25 Off</h3>
                                 <p className="font-medium mb-4">Your Next Repair</p>
                                 <p className="text-sm text-gray-600">
                                     *Restrictions may apply. Call Mechanical of DFW for complete details.
@@ -75,13 +75,13 @@ const QualityAndDeals = () => {
 
                             {/* FREE 2nd Opinion */}
                             <motion.div
-                                className="border-2 border-dashed border-red-600 rounded-lg p-6 bg-white"
+                                className="border-2 border-dashed border-orange-600 rounded-lg p-6 bg-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.1 }}
                             >
-                                <h3 className="text-3xl font-bold text-red-600 mb-2">FREE</h3>
+                                <h3 className="text-3xl font-bold text-orange-600 mb-2">FREE</h3>
                                 <p className="font-medium mb-4">2nd Opinion on Major HVAC Repairs</p>
                                 <p className="text-sm text-gray-600">
                                     *Restrictions may apply. Call Mechanical of DFW for complete details.
@@ -90,13 +90,13 @@ const QualityAndDeals = () => {
 
                             {/* $2,000 Rebates */}
                             <motion.div
-                                className="border-2 border-dashed border-red-600 rounded-lg p-6 bg-white"
+                                className="border-2 border-dashed border-orange-600 rounded-lg p-6 bg-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
                             >
-                                <h3 className="text-3xl font-bold text-red-600 mb-2">$2,000</h3>
+                                <h3 className="text-3xl font-bold text-orange-600 mb-2">$2,000</h3>
                                 <p className="font-medium mb-4">in Rebates on New HVAC System</p>
                                 <p className="text-sm text-gray-600">
                                     *On qualifying equipment. Other restrictions may apply. Utility Rebates up to $1500. In-house rebates up to $500. Call us for complete details.
@@ -105,13 +105,13 @@ const QualityAndDeals = () => {
 
                             {/* FREE Estimates */}
                             <motion.div
-                                className="border-2 border-dashed border-red-600 rounded-lg p-6 bg-white"
+                                className="border-2 border-dashed border-orange-600 rounded-lg p-6 bg-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.3 }}
                             >
-                                <h3 className="text-3xl font-bold text-red-600 mb-2">FREE</h3>
+                                <h3 className="text-3xl font-bold text-orange-600 mb-2">FREE</h3>
                                 <p className="font-medium mb-4">Estimates on System Replacement</p>
                                 <p className="text-sm text-gray-600">
                                     *Not valid with any other offers. Restrictions may apply. Call Mechanical of DFW for complete details.
@@ -141,7 +141,7 @@ const QualityAndDeals = () => {
                                 >
                                     <Link
                                         to="/specials"
-                                        className="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-medium shadow-lg transition-all"
+                                        className="inline-block bg-orange-600 hover:bg-orange-700 text-white py-3 px-8 rounded-full font-medium shadow-lg transition-all"
                                     >
                                         View All Specials
                                     </Link>

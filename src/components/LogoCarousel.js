@@ -44,20 +44,18 @@ const LogoCarousel = ({ hideTitle = false }) => {
                 transition: {
                     duration: 20,
                     ease: "linear",
+                    repeat: Infinity,
+                    repeatType: "loop"
                 }
             });
-
-            // Check if component is still mounted before continuing
-            if (!carouselRef.current) return;
-
-            // Instantly reset position without animation
-            controls.set({ x: 0 });
-
-            // Restart the sequence
-            startInfiniteScroll();
         };
 
         startInfiniteScroll();
+
+        // Cleanup function
+        return () => {
+            controls.stop();
+        };
     }, [controls, isMounted]);
 
     return (
