@@ -8,7 +8,7 @@ const Header = () => {
   const location = useLocation();
 
   // Check if we're on the homepage
-  const isHomePage = location.pathname === '/';
+  const isHomePage = location.pathname === '/' || location.pathname === '';
 
   useEffect(() => {
     const handleScroll = () => {

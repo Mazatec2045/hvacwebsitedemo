@@ -1,7 +1,6 @@
 {
   "name": "hvacwebsite",
   "version": "0.1.0",
-  "homepage": "https://Mazatec2045.github.io/MechanicalofDFW",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
