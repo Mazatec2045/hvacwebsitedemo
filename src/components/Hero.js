@@ -18,7 +18,7 @@ const Hero = () => {
           preload="auto"
           className="absolute object-cover w-full h-full"
         >
-          <source src="/Videos/hvac_video1.mp4" type="video/mp4" />
+          <source src={process.env.PUBLIC_URL + '/Videos/hvac video1 .mp4'} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Overlay to make text more readable */}

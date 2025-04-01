@@ -33,8 +33,8 @@ const QualityAndDeals = () => {
                             transition={{ duration: 0.8 }}
                         >
                             <img
-                                src="https://placehold.co/600x400?text=HVAC+Technician"
-                                alt="HVAC Technician servicing outdoor unit"
+                                src={process.env.PUBLIC_URL + '/workingtech.jpg'}
+                                alt="HVAC Technician servicing equipment"
                                 className="w-full h-auto object-cover"
                             />
                         </motion.div>
