@@ -27,7 +27,7 @@ const LocallyTrustedTeam = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     {/* Team Image */}
                     <motion.div
-                        className="relative h-full min-h-[300px] md:min-h-[500px] flex items-center justify-center"
+                        className="relative w-full h-auto overflow-hidden"
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -36,14 +36,13 @@ const LocallyTrustedTeam = () => {
                         <img
                             src={process.env.PUBLIC_URL + '/Hvac Service Team.jpg'}
                             alt="Our HVAC Service Team"
-                            className="w-full h-auto max-h-[500px] object-contain"
-                            style={{ maxWidth: '100%' }}
+                            className="w-full h-auto"
                         />
                     </motion.div>
 
                     {/* Team Info */}
                     <motion.div
-                        className="bg-orange-600 text-white p-8 md:p-12 flex flex-col justify-center"
+                        className="bg-red-700 text-white p-8 md:p-12 flex flex-col justify-center"
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -53,7 +52,7 @@ const LocallyTrustedTeam = () => {
                             Your Locally Trusted Team
                         </h2>
                         <p className="text-white/90 mb-6 leading-relaxed">
-                            For over 20 years, Mechanical of DFW HVAC has been the go-to choice for Dallas-Fort Worth area residents when it comes to their homes and health. As a local business, we're proud to serve the community we call home with our premium HVAC services and 100% Satisfaction Guarantee, that puts your needs first and builds trust. Don't settle for half-baked service and so-so results. Instead, discover the difference an expert team makes. Contact Smock HVAC to get started!
+                            For over 20 years, Mechanical of DFW HVAC has been the go-to choice for Dallas-Fort Worth area residents when it comes to their homes and health. As a local business, we're proud to serve the community we call home with our premium HVAC services and 100% Satisfaction Guarantee, that puts your needs first and builds trust. Don't settle for half-baked service and so-so results. Instead, discover the difference an expert team makes. Contact Mechanical of DFW to get started!
                         </p>
                         <div className="mt-4">
                             <motion.div
@@ -62,7 +61,7 @@ const LocallyTrustedTeam = () => {
                             >
                                 <Link
                                     to="/about"
-                                    className="inline-block bg-white text-orange-600 hover:bg-gray-100 py-3 px-8 rounded-full font-medium shadow-lg transition-all"
+                                    className="inline-block bg-white text-red-700 hover:bg-gray-100 py-2 px-6 rounded-full font-medium shadow-lg transition-all"
                                 >
                                     More About Us
                                 </Link>
