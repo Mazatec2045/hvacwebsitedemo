@@ -27,7 +27,7 @@ const LocallyTrustedTeam = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     {/* Team Image */}
                     <motion.div
-                        className="relative h-full min-h-[300px] md:min-h-[400px]"
+                        className="relative h-full min-h-[300px] md:min-h-[500px] flex items-center justify-center"
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -36,7 +36,8 @@ const LocallyTrustedTeam = () => {
                         <img
                             src={process.env.PUBLIC_URL + '/Hvac Service Team.jpg'}
                             alt="Our HVAC Service Team"
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="w-full h-auto max-h-[500px] object-contain"
+                            style={{ maxWidth: '100%' }}
                         />
                     </motion.div>
 
