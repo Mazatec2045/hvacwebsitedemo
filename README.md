@@ -1,8 +1,24 @@
+# Project Overview
+
+This project is a React-based website for an HVAC service company.
+
+# Project Structure
+
+*   `public/`: Contains static assets like images, videos, and the main `index.html`.
+*   `src/`: Contains the main React application code.
+*   `src/assets/`: Contains static assets like images and logos that are imported into components.
+*   `src/components/`: Contains reusable UI components used throughout the application.
+*   `src/pages/`: Contains components that represent the main pages of the site, corresponding to routes.
+*   `src/App.js`: The main application component, responsible for routing and overall page layout.
+*   `src/index.js`: The entry point for the React application.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+This project uses the standard scripts provided by Create React App.
 
 In the project directory, you can run:
 
@@ -68,3 +84,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Application Routing
+
+This section describes the client-side routing set up in `src/App.js`.
+
+| Path        | Page Component  | Description                                         |
+|-------------|-----------------|-----------------------------------------------------|
+| `/`         | `HomePage`      | Displays the main landing page of the application.  |
+| `/services` | `ServicesPage`  | Shows the services offered by the company.          |
+| `/about`    | `AboutPage`     | Provides information about the company.             |
+| `/financing`| `FinancingPage` | Details financing options available.                |
+| `/contact`  | `ContactPage`   | Offers ways to get in touch with the company.       |
