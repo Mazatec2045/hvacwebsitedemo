@@ -30,12 +30,6 @@ const PageLayout = ({ children }) => {
 const AppRoutes = () => {
   const location = useLocation();
 
-  // Add location change debugging
-  useEffect(() => {
-    const currentPath = location.pathname;
-    console.log('Current location:', currentPath);
-  }, [location]);
-
   return (
     <>
       <ScrollToTopOnNavigate />
@@ -69,7 +63,6 @@ const AppRoutes = () => {
           path="/financing"
           element={
             <PageLayout>
-              {console.log('Rendering Financing route')}
               <FinancingPage />
             </PageLayout>
           }
